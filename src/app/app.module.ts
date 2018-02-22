@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import { AngularCesiumModule } from 'angular-cesium';
 import { AppComponent } from './app.component';
 
 
@@ -10,7 +10,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AngularCesiumModule.forRoot()
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
